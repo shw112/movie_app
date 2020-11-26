@@ -17,22 +17,23 @@ class App extends React.Component{
     this.setState(current => ({count: current.count-1}));
   };
 
-
-  // before render
-  /*
-    Mounting - component being bone
-    Updating - just state update caused by you
-    Unmounting - component가 죽는것
-  */
+/*  Component Life Cycle 
+  //  Mounting - component being bone
   componentDidMount() {
     console.log("Component rendered");
   }
+  
+  //  Updating - just state update caused by you
   componentDidUpdate() {
     console.log("I just updated");
   }
+  
+  //  Unmounting - component가 죽는것
   componentWillUnmount() {
     console.log("Goodbye, cruel world");
   }
+*/
+
   render() {
     console.log("I'm rendering");
     return (
